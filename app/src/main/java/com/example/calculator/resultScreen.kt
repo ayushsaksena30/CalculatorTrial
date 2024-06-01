@@ -15,7 +15,7 @@ class SecondActivity : AppCompatActivity() {
         backButton.setOnClickListener{
             finish()
         }
-        val result= intent.getIntExtra("RESULT", 0)
+        val result= intent.getDoubleExtra("RESULT", 0.0)
 
         val ans=findViewById<TextView>(R.id.tv_ans)
         ans.text=result.toString()
