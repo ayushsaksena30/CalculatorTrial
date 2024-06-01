@@ -16,7 +16,6 @@ class SecondActivity : AppCompatActivity() {
             finish()
         }
         val result= intent.getIntExtra("RESULT", 0)
-      //  val result_sub = intent. getIntExtra("SUB", 0)
 
         val ans=findViewById<TextView>(R.id.tv_ans)
         ans.text=result.toString()
